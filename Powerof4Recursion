@@ -1,0 +1,13 @@
+def is_power_of_4(n):
+    if n<=0:
+        return False
+    while n%4 == 0:
+        n = n//4
+    return n==1
+
+num = int(input("Enter a number: "))
+
+if is_power_of_4(num):
+    print("Yes! It is a power of 4.")
+else:
+    print("No! It is not a power of 4.")
